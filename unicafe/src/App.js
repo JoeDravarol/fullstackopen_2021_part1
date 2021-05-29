@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-const Feedback = ({ text, value}) => (
-  <p>{text} {value}</p>
-)
-
 const Button = ({ text, handleClick }) => (
   <button onClick={handleClick}>{text}</button>
+)
+
+const Statistic = ({ text, value}) => (
+  <p>{text} {value}</p>
 )
 
 const Statistics = ({ good, neutral, bad }) => {
@@ -27,13 +27,13 @@ const Statistics = ({ good, neutral, bad }) => {
     <>
       <h2>Statistics</h2>
 
-      <Feedback text='good' value={good} />
-      <Feedback text='neutral' value={neutral} />
-      <Feedback text='bad' value={bad} />
-      <Feedback text='all' value={totalFeedback} />
+      <Statistic text='good' value={good} />
+      <Statistic text='neutral' value={neutral} />
+      <Statistic text='bad' value={bad} />
+      <Statistic text='all' value={totalFeedback} />
 
-      <p>average {averageFeedback}</p>
-      <p>positive {positiveFeedbackPercentage} %</p>
+      <Statistic text='average' value={averageFeedback} />
+      <Statistic text='positive' value={positiveFeedbackPercentage} />
     </>
   )
 }
