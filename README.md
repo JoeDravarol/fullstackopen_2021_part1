@@ -1,3 +1,5 @@
-# Part1 - Introduction to React
+# Part1 - [Introduction to React](https://fullstackopen.com/en/part1)
 
-In this part, we will familiarize ourselves with the React-library, which we will be using to write the code that runs in the browser. We will also look at some features of JavaScript that are important for understanding React.
+Covers fundamental elements of working with the React-library, and features of JavaScript that are important for understanding React.
+
+The exercises cover building basic React UI to demonstrate component rendering, state management, event handling and debugging React applications.
